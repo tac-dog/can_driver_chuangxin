@@ -1,0 +1,9 @@
+<launch>
+      <arg name="debug" default="false" />
+
+      <node if="$(arg debug)" pkg="can_pkg" type="can_ctrl" name="can_ctrl" 
+            output="screen" launch-prefix="xterm -e gdb --args" />
+      <node unless="$(arg debug)" pkg="can_pkg" type="can_ctrl" name="can_ctrl" 
+            output="screen" launch-prefix="" />
+
+</launch>
