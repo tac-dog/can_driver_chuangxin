@@ -7,7 +7,7 @@
 ```
 mkdir -p catkin_ws/src
 cd catkin_ws/src
-git clone git@github.com:Autonomous-Robotics-Lab-Team/can_driver_chuangxin.git
+git clone https://github.com/tac-dog/can_driver_chuangxin.git
 catkin build
 ```
 
